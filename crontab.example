@@ -1,0 +1,6 @@
+# Nightly Archival Cron Job Setup
+#
+# Add this to your crontab with: crontab -e
+#
+# Run nightly at 3:00 AM:
+0 3 * * * cd /home/bigboy/Documents/CMS-to-Astros && ./generator/nightly-archive.sh >> /var/log/cms-archive.log 2>&1
